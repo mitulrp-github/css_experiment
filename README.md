@@ -2,9 +2,14 @@
 
 This repository contains various CSS experiments.
 
-## Bird Hover Experiment
+# Diving into the World of CSS Wizardry ✨
 
-Check out the Bird Hover Experiment live at [https://mitulrp-github.github.io/css_experiment/bird_hover/](https://mitulrp-github.github.io/css_experiment/bird_hover/).
+Welcome to the realm of CSS sorcery! Within this enchanted repository lie spells of style and enchanting experiments.
 
+## Bird Hover Ballet 🐦
 
-Check out the Analog and Digital Clock Experiment live at [https://mitulrp-github.github.io/css_experiment/clock/](https://mitulrp-github.github.io/css_experiment/clock/).
+Behold the graceful Bird Hover Experiment, where feathered friends dance upon the winds of your cursor's magic. Witness the spectacle [here](https://mitulrp-github.github.io/css_experiment/bird_hover/).
+
+## Timeless Timepieces ⏰
+
+Embark on a journey through time with the Analog and Digital Clock Experiment. Witness the fusion of tradition and technology as the hands of time twirl and tick in harmony. Experience the magic [here](https://mitulrp-github.github.io/css_experiment/clock/).
