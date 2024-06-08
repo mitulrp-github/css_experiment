@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Trailing Cursor Effect</title>
+<style>
+  body {
+    margin: 0;
+    overflow: hidden;
+  }
+
+  .trailing-cursor {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #ff0000; /* Red cursor color */
+    border-radius: 50%;
+    pointer-events: none; /* Allow clicks to pass through */
+    transition: all 0.1s ease;
+    z-index: 9999; /* Ensure cursor stays on top */
+    animation: fluidMovement 1s infinite alternate ease-in-out; /* Animation */
+  }
+
+  @keyframes fluidMovement {
+    0% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(1.5);
+    }
+  }
+</style>
+</head>
+<body>
+<div class="trailing-cursor"></div>
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const cursor = document.querySelector(".trailing-cursor");
+
+    document.addEventListener("mousemove", function(e) {
+      const posX = e.clientX;
+      const posY = e.clientY;
+
+      cursor.style.left = posX + "px";
+      cursor.style.top = posY + "px";
+
+      const trailCursors = document.querySelectorAll(".trail-cursor");
+      trailCursors.forEach((trailCursor, index) => {
+        const delay = index * 50; // Adjust the delay between trail cursors
+        setTimeout(() => {
+          trailCursor.style.left = (posX - (index * 10)) + "px"; // Adjust trail offset
+          trailCursor.style.top = (posY - (index * 10)) + "px"; // Adjust trail offset
+        }, delay);
+      });
+    });
+
+    // Create trail cursors
+    for (let i = 0; i < 10; i++) {
+      const trailCursor = document.createElement("div");
+      trailCursor.classList.add("trailing-cursor", "trail-cursor");
+      document.body.appendChild(trailCursor);
+    }
+  });
+</script>
+</body>
+</html>
