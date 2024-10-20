@@ -21,6 +21,7 @@ Step into a mesmerizing visual experience with the Trailing Cursor Effect! This 
 ### 🕰️ Neomorphic Clock
 
 A simple and interactive neomorphic clock built with HTML, CSS, and JavaScript. This project features both analog and digital clock displays with a light/dark mode toggle. The design is inspired by neomorphism, providing a soft, tactile appearance.
+check it out [here](https://mitulrp-github.github.io/css_experiment/clock_v2/).
 
 - **Analog Clock**: Displays the current time using rotating clock hands.
 - **Digital Clock**: Shows the current time in a digital format below the analog clock.
