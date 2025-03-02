@@ -23,8 +23,8 @@ You can view a live demo of this project [here](https://mitulrp-github.github.io
 1. **Clone the repository** to your local machine:
 
     ```bash
-    git clone https://github.com/yourusername/NeonBirthdayAnimation.git
-    cd NeonBirthdayAnimation
+    git clone https://github.com/mitulrp-github/css_experiment/neon_birthday.git
+    cd neon_birthday
     ```
 
 2. **Create the necessary files**:
