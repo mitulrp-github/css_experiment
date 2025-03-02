@@ -10,7 +10,7 @@ A fun and interactive "Happy Birthday" animation featuring neon glowing effects 
 
 ## Demo
 
-You can view a live demo of this project [here](https://mitulrp-github.github.io/css_experiment/bird_hover/) (Add link when deployed).
+You can view a live demo of this project [here](https://mitulrp-github.github.io/css_experiment/neon_birthday/) (Add link when deployed).
 
 ## Technologies Used
 
