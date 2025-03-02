@@ -1,0 +1,111 @@
+/* Reset and setup basic styles */
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #111; /* Dark background */
+  overflow: hidden;
+}
+
+#app {
+  text-align: center;
+  font-family: 'Dancing Script', cursive; /* Cursive font for the message */
+  color: #fff;
+}
+
+#birthdayMessage {
+  font-size: 80px; /* Large font for "Happy Birthday" */
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  text-shadow: 
+      0 0 5px #ffffff, 
+      0 0 10px #aefa97,  /* Changed to green */
+      0 0 20px #aefa97,  /* Changed to green */
+      0 0 30px #aefa97,  /* Changed to green */
+      0 0 40px #aefa97,  /* Changed to green */
+      0 0 75px #aefa97,  /* Changed to green */
+      0 0 100px #aefa97; /* Changed to green */
+  opacity: 0; /* Start invisible */
+  white-space: nowrap;
+  animation: typing 5s steps(30) 1s forwards, neonGlow 1.5s ease-in-out infinite alternate;
+}
+
+/* Typewriter Effect */
+@keyframes typing {
+  0% {
+      width: 0;
+      opacity: 1;
+  }
+  100% {
+      width: 100%;
+      opacity: 1;
+  }
+}
+
+/* Neon Glow Effect with Blinking */
+@keyframes neonGlow {
+  0% {
+      text-shadow: 
+          0 0 5px #ffffff, 
+          0 0 10px #aefa97,  /* Changed to green */
+          0 0 20px #aefa97,  /* Changed to green */
+          0 0 30px #aefa97,  /* Changed to green */
+          0 0 40px #aefa97,  /* Changed to green */
+          0 0 75px #aefa97,  /* Changed to green */
+          0 0 100px #aefa97; /* Changed to green */
+  }
+  50% {
+      text-shadow: 
+          0 0 15px #ffffff, 
+          0 0 30px #aefa97,  /* Brighter green */
+          0 0 45px #aefa97,  /* Brighter green */
+          0 0 60px #aefa97,  /* Brighter green */
+          0 0 80px #aefa97,  /* Brighter green */
+          0 0 100px #aefa97, /* Brighter green */
+          0 0 150px #aefa97; /* Brighter green */
+  }
+  100% {
+      text-shadow: 
+          0 0 5px #ffffff, 
+          0 0 10px #aefa97,  /* Changed back to green */
+          0 0 20px #aefa97,  /* Changed back to green */
+          0 0 30px #aefa97,  /* Changed back to green */
+          0 0 40px #aefa97,  /* Changed back to green */
+          0 0 75px #aefa97,  /* Changed back to green */
+          0 0 100px #aefa97; /* Changed back to green */
+  }
+}
+
+/* Styling for the user's name */
+#userName {
+  font-size: 50px;
+  color: #fff;
+  opacity: 0;
+  margin-top: 20px;
+  animation: nameAppear 3s 7s forwards; /* Name appears after the main animation */
+}
+
+/* Name Fade-in Effect */
+@keyframes nameAppear {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+/* Styling for the "From: AK" text */
+#fromLine {
+  font-size: 30px;
+  color: #fff;
+  opacity: 0;
+  margin-top: 20px;
+  animation: fromLineAppear 2s 10s forwards; /* Delay to appear after user's name */
+}
+
+/* From: AK fade-in effect */
+@keyframes fromLineAppear {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
